@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mahmoud Adel | Creative Digital Solutions</title>
+<meta name="description" content="Freelance video production, video editing, music videos, web and app development, and AI automation by Mahmoud Adel Mahmoud.">
+<meta name="theme-color" content="#07070d">
+<meta property="og:title" content="Mahmoud Adel | Creative Digital Solutions">
+<meta property="og:description" content="Videos, websites, apps and AI automation workflows.">
+<meta property="og:image" content="assets/portrait-sq.jpg">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><img src="assets/icon-192.png" alt="Mahmoud Adel" width="34" height="34"><span>Mahmoud Adel<small>Creative Digital Solutions</small></span></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  <nav class="links" id="links" aria-label="Main">
+   <a href="#home" data-i="nav_home"></a><a href="#about" data-i="nav_about"></a><a href="#video" data-i="nav_video"></a><a href="#music" data-i="nav_music"></a><a href="#editing" data-i="nav_edit"></a><a href="#web" data-i="nav_web"></a><a href="#apps" data-i="nav_app"></a><a href="#ai" data-i="nav_ai"></a><a href="#portfolio" data-i="nav_portfolio"></a><a href="#contact" data-i="nav_contact"></a>
+  </nav>
+  <select class="lang" id="lang" aria-label="Language"></select>
+ </div>
+</header>
+
+<main id="main" class="wrap">
+
+<!-- HOME -->
+<section class="page" id="home">
+ <div class="hero">
+  <div>
+   <span class="tag" data-i="hero_tag"></span>
+   <h1 data-i-html="hero_h"></h1>
+   <p class="mu" data-i="hero_p"></p>
+   <div class="btns">
+    <a class="btn p" href="#portfolio" data-i="btn_portfolio"></a>
+    <a class="btn o" href="#services-grid" data-go="services" data-i="btn_services"></a>
+    <a class="btn g" href="#contact" data-i="btn_contact"></a>
+   </div>
+  </div>
+  <div class="frame"><div class="in"><img src="assets/portrait.jpg" alt="Mahmoud Adel Mahmoud portrait" width="900" height="1121" fetchpriority="high"></div></div>
+ </div>
+ <h2 id="services-grid" data-i="services"></h2><p class="mu" data-i="services_p"></p>
+ <div class="grid" id="svc" style="margin-top:14px"></div>
+ <h2 style="margin-top:34px" data-i="featured"></h2><p class="mu" data-i="featured_p"></p>
+ <div class="grid" id="featured" style="margin-top:14px"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="page" id="about">
+ <div class="two">
+  <div class="frame"><div class="in"><img src="assets/portrait.jpg" alt="Mahmoud Adel Mahmoud" loading="lazy" width="900" height="1121"></div></div>
+  <div><h2 data-i="about_h"></h2><p data-i="about_p1" style="margin-top:10px"></p><p class="mu" data-i="about_p2" style="margin-top:10px"></p><div class="note" data-i="about_note"></div>
+   <div class="btns"><a class="btn p" href="#contact" data-i="btn_contact"></a></div></div>
+ </div>
+</section>
+
+<!-- VIDEO PRODUCTION -->
+<section class="page" id="video">
+ <h2 data-i="s_video"></h2><p class="mu" data-i="s_video_d"></p>
+ <div class="grid" style="margin-top:16px">
+  <div class="card"><div class="ico">📣</div><h3>Promotional &amp; marketing</h3><p class="mu">Brand and campaign videos built around one clear message.</p></div>
+  <div class="card"><div class="ico">▶️</div><h3>YouTube</h3><p class="mu">Long-form videos with structure, pacing and thumbnails.</p></div>
+  <div class="card"><div class="ico">📱</div><h3>TikTok · Reels · Shorts</h3><p class="mu">Vertical 9:16 edits made for the first three seconds.</p></div>
+  <div class="card"><div class="ico">🎓</div><h3>Educational &amp; explainer</h3><p class="mu">Simple visuals that make a hard topic easy.</p></div>
+  <div class="card"><div class="ico">🎬</div><h3>Cinematic storytelling</h3><p class="mu">Mood, grade and sound that carry a story.</p></div>
+  <div class="card"><div class="ico">🛍️</div><h3>Product showcase</h3><p class="mu">Clean product shots and benefit-led captions.</p></div>
+  <div class="card"><div class="ico">🎉</div><h3>Event highlights</h3><p class="mu">Fast recaps that capture the best moments.</p></div>
+  <div class="card"><div class="ico">🤖</div><h3>AI-assisted production</h3><p class="mu">AI-generated scenes where they fit the brief.</p></div>
+ </div>
+ <div class="two" style="margin-top:20px">
+  <div class="panel"><h3 data-i="workflow"></h3><p class="mu" data-i="v_wf"></p><h3 style="margin-top:12px" data-i="deliverables"></h3><p class="mu" data-i="v_del"></p></div>
+  <div class="panel"><div class="chips"><span class="st demo" data-i="st_demo"></span></div><h3 style="margin-top:8px">Sample card</h3><div id="vidSample"></div></div>
+ </div>
+</section>
+
+<!-- MUSIC -->
+<section class="page" id="music">
+ <h2 data-i="m_h"></h2><p class="mu" data-i="m_p"></p>
+ <div class="grid" style="margin:16px 0">
+  <div class="card"><div class="ico">🎤</div><h3>Lyric videos</h3><p class="mu">Synchronized subtitles with animated highlighting.</p></div>
+  <div class="card"><div class="ico">🖼️</div><h3>Single-image music videos</h3><p class="mu">One strong image, motion and a clean typographic layer.</p></div>
+  <div class="card"><div class="ico">📊</div><h3>Audio visualization</h3><p class="mu">Waveform and spectrum animation reacting to the track.</p></div>
+  <div class="card"><div class="ico">📐</div><h3>16:9 · 9:16 · 1:1</h3><p class="mu">MP4 output for YouTube, Shorts and social feeds.</p></div>
+ </div>
+ <div class="panel" id="lyricBox"><h3 data-i="m_demo"></h3>
+  <div class="lyric" id="lyric"><img src="assets/portrait-sq.jpg" alt="" loading="lazy" width="640" height="640"><div><div class="lines" id="lines"></div><div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+  <div class="btns"><button class="btn p" id="lyricPlay">▶ Play</button></div>
+  <div class="note" data-i="m_demo_note"></div></div>
+</section>
+
+<!-- EDITING -->
+<section class="page" id="editing">
+ <h2 data-i="e_h"></h2><p class="mu" data-i="e_p"></p>
+ <div class="two" style="margin-top:18px">
+  <div class="panel"><h3 data-i="e_ba"></h3>
+   <div class="ba" id="ba"><img class="bef" id="baImg1" alt="" loading="lazy"><img class="af" id="baImg2" alt="" loading="lazy"><span class="lb" style="left:8px" data-i="e_before"></span><span class="lb" style="right:8px" data-i="e_after"></span><div class="hd" id="baHd"></div></div>
+   <div class="tl" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+   <div class="note" data-i="e_ba_note"></div></div>
+  <div class="panel"><ul class="ck"><li>Cutting &amp; trimming</li><li>Multi-camera editing</li><li>Color correction &amp; grading</li><li>Transitions &amp; motion graphics</li><li>Audio cleanup &amp; sync</li><li>Captions &amp; subtitles</li><li>Social, YouTube, documentary &amp; interview edits</li><li>Export optimization</li></ul>
+   <div id="editSample" style="margin-top:14px"></div></div>
+ </div>
+</section>
+
+<!-- WEB -->
+<section class="page" id="web">
+ <h2 data-i="w_h"></h2><p class="mu" data-i="w_p"></p>
+ <div class="grid" style="margin:16px 0">
+  <div class="card"><div class="ico">🏢</div><h3>Business websites</h3></div><div class="card"><div class="ico">👤</div><h3>Personal portfolios</h3></div>
+  <div class="card"><div class="ico">🚀</div><h3>Landing pages</h3></div><div class="card"><div class="ico">🗂️</div><h3>Online catalogs</h3></div>
+  <div class="card"><div class="ico">📲</div><h3>PWAs</h3></div><div class="card"><div class="ico">🔌</div><h3>API integrations</h3></div>
+  <div class="card"><div class="ico">📈</div><h3>Admin dashboards</h3></div><div class="card"><div class="ico">✉️</div><h3>Forms &amp; contact systems</h3></div>
+ </div>
+ <div class="grid" id="webCards"></div>
+</section>
+
+<!-- APPS -->
+<section class="page" id="apps">
+ <h2 data-i="a_h"></h2><p class="mu" data-i="a_p"></p>
+ <div class="grid" style="margin:16px 0">
+  <div class="card"><div class="ico">🤖</div><h3>Android-friendly web apps</h3></div><div class="card"><div class="ico">📲</div><h3>Progressive Web Apps</h3></div>
+  <div class="card"><div class="ico">🎞️</div><h3>Media gallery &amp; players</h3></div><div class="card"><div class="ico">✅</div><h3>Productivity &amp; education</h3></div>
+  <div class="card"><div class="ico">🧠</div><h3>AI-powered tools</h3></div><div class="card"><div class="ico">🗄️</div><h3>Database-connected apps</h3></div>
+ </div>
+ <div class="panel"><h3 data-i="a_proto"></h3><p class="mu" data-i="a_proto_d"></p></div>
+ <div class="grid" id="appCards" style="margin-top:16px"></div>
+</section>
+
+<!-- AI -->
+<section class="page" id="ai">
+ <h2 data-i="ai_h"></h2><p class="mu" data-i="ai_p"></p>
+ <div class="panel" style="margin-top:16px"><h3 data-i="ai_sim"></h3>
+  <div class="wf" id="wf"></div>
+  <div class="stepbox" id="stepbox"></div>
+  <div class="btns"><button class="btn p" id="wfRun" data-i="ai_run"></button><button class="btn g" id="wfReset" data-i="ai_reset"></button></div>
+  <div class="two" style="margin-top:14px">
+   <div><h3 data-i="ai_problem"></h3><p class="mu">Customer inquiries arrive by email and need to be sorted and answered quickly.</p><h3 style="margin-top:10px" data-i="ai_tools"></h3><p class="mu">Email API · LLM API · spreadsheet or database · notification channel</p></div>
+   <div><h3 data-i="ai_result"></h3><p class="mu">Inquiries are classified, drafted and queued for a quick human check before anything is sent.</p><h3 style="margin-top:10px" data-i="ai_limits"></h3><p class="mu">Needs mailbox permission, API credentials kept server-side, and human approval for important actions.</p></div>
+  </div></div>
+ <div class="grid" style="margin-top:16px">
+  <div class="card"><div class="ico">📑</div><h3>Document processing</h3></div><div class="card"><div class="ico">🔁</div><h3>Repetitive task automation</h3></div>
+  <div class="card"><div class="ico">🔌</div><h3>API integrations</h3></div><div class="card"><div class="ico">📆</div><h3>Scheduled reporting</h3></div>
+  <div class="card"><div class="ico">✍️</div><h3>AI content workflows</h3></div><div class="card"><div class="ico">🙋</div><h3>Human approval steps</h3></div>
+ </div>
+ <div class="grid" id="aiCards" style="margin-top:16px"></div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="page" id="portfolio">
+ <h2 data-i="p_h"></h2><p class="mu" data-i="p_p"></p>
+ <div class="filters" id="filters" role="tablist"></div>
+ <div class="grid" id="pgrid"></div>
+ <div class="panel" style="margin-top:22px"><h3 data-i="up_h"></h3><p class="mu" data-i="up_p"></p>
+  <div class="btns"><label class="btn g" for="upl" style="cursor:pointer" data-i="up_btn"></label><input id="upl" type="file" accept="video/*" style="display:none"><span class="mu" id="upn" data-i="up_none"></span></div>
+  <div id="upv"></div></div>
+</section>
+
+<!-- CONTACT -->
+<section class="page" id="contact">
+ <h2 data-i="c_h"></h2><p class="mu" data-i="c_p"></p>
+ <div class="two" style="margin-top:16px">
+  <div class="panel">
+   <p><strong>Mahmoud Adel Mahmoud</strong></p>
+   <p class="mu">✉️ <a id="mailTxt" href="#"></a></p>
+   <p class="mu">💬 <a id="waTxt" href="#"></a></p>
+   <div class="btns"><a class="btn p" id="bMail" href="#" data-i="c_email"></a><a class="btn wa" id="bWa" href="#" target="_blank" rel="noopener" data-i="c_wa"></a><a class="btn o" href="#cform" data-i="c_discuss"></a></div>
+   <div class="soc" id="soc" style="margin-top:14px"></div>
+  </div>
+  <div class="panel" id="cform"><form id="form" novalidate>
+   <label><span data-i="f_name"></span><input name="name" autocomplete="name" required><span class="err" data-for="name"></span></label>
+   <label><span data-i="f_email"></span><input name="email" type="email" autocomplete="email" inputmode="email" required><span class="err" data-for="email"></span></label>
+   <label><span data-i="f_service"></span><select name="service" id="svcSel" required></select><span class="err" data-for="service"></span></label>
+   <label><span data-i="f_desc"></span><textarea name="desc" required></textarea><span class="err" data-for="desc"></span></label>
+   <div class="row"><label><span data-i="f_budget"></span><input name="budget"></label><label><span data-i="f_deadline"></span><input name="deadline" type="date"></label></div>
+   <button class="btn p" type="submit" data-i="f_send"></button>
+   <div id="okbox"></div>
+   <div class="note" data-i="form_note"></div>
+  </form></div>
+ </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="page" id="privacy">
+ <h2 data-i="priv_h"></h2>
+ <div class="panel" style="margin-top:14px"><p data-i="priv_p1"></p><p style="margin-top:10px" data-i="priv_p2"></p><p style="margin-top:10px" data-i="priv_p3"></p><p style="margin-top:10px" data-i="priv_p4"></p></div>
+</section>
+</main>
+
+<footer><div class="wrap">
+ <div class="soc" id="fsoc"></div>
+ <p><a href="#privacy" data-i="nav_privacy"></a> · © <span id="yr"></span> Mahmoud Adel Mahmoud. <span data-i="rights"></span></p>
+ <p style="margin-top:6px" data-i="disclaimer"></p>
+</div></footer>
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">💬 WhatsApp</a>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="mbox"><button class="x" id="mx" aria-label="Close">✕</button><div id="mc"></div></div></div>
+
+<script src="i18n.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body></html>
