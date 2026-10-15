@@ -22,7 +22,7 @@ function applyLang(l){
 sel.addEventListener('change',function(){applyLang(sel.value)});
 
 /* ---------- routing ---------- */
-var pages=['home','about','video','music','editing','web','apps','ai','portfolio','contact','privacy'];
+var pages=['home','about','video','music','editing','web','apps','ai','portfolio','agent','contact','privacy'];
 function route(){
  var h=(location.hash||'#home').slice(1); if(h==='services-grid')h='home'; if(pages.indexOf(h)<0)h='home';
  $$('.page').forEach(function(p){p.classList.toggle('on',p.id===h)});
@@ -130,6 +130,9 @@ $('#waTxt').textContent='+'+waNum; $('#waTxt').href='https://wa.me/'+waNum;
 $('#bMail').href=mailBase+'?subject='+encodeURIComponent('Project inquiry'); 
 $('#bWa').href='https://wa.me/'+waNum+'?text='+encodeURIComponent('Hello Mahmoud, I would like to discuss a project.');
 $('#fab').href='https://wa.me/'+waNum+'?text='+encodeURIComponent('Hello Mahmoud');
+var agTxt=encodeURIComponent('Hello, I want my own AI assistant');
+var ag='https://wa.me/'+waNum+'?text='+agTxt; $('#agWa').textContent='+'+waNum; $('#agWa').href=ag; $('#agWaBtn').href=ag;
+$('#agRef').href=(D.agentRef||'https://app.base44.com/create-superagent');
 $('#yr').textContent=new Date().getFullYear();
 var lastMsg=null;
 function msgText(f){return 'Name: '+f.name+'\nEmail: '+f.email+'\nService: '+f.service+'\nBudget: '+(f.budget||'-')+'\nDeadline: '+(f.deadline||'-')+'\n\n'+f.desc}
