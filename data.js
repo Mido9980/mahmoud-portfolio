@@ -56,6 +56,9 @@ window.SITE = {
     { id:'p13', cat:'app',  status:'done', thumb:'media/demo1.jpg', live:'https://mido9980.github.io/easy-video/', source:'https://github.com/Mido9980/easy-video', tools:['Canvas','WebAudio','PWA'],
       title:{en:'EASY VIDEO (web app)', ar:'EASY VIDEO (تطبيق ويب)'},
       desc:{en:'Chat-style video maker that renders short videos on-device. Live web app, not published on any app store.', ar:'صانع فيديو بأسلوب المحادثة يرسم الفيديو على الجهاز. تطبيق ويب شغال وغير منشور على متجر تطبيقات.'} },
+    { id:'p15', cat:'app', status:'done', thumb:'media/codeforge-thumb.png', live:'https://able-code-forge-flow.base44.app', source:'files/codeforge.zip', tools:['React','Base44','RTL UI','AI Builder'],
+      title:{en:'CodeForge Platform', ar:'منصة CodeForge'},
+      desc:{en:'An all-in-one development platform UI (RTL Arabic) with dashboard, projects, code studio, AI builder, agents, database and deploy pages, built on Base44. The source link downloads a zip of the front-end for review.', ar:'منصة تطوير متكاملة بواجهة عربية RTL: داشبورد ومشاريع ومحرر أكواد وبانى بالذكاء الاصطناعي ووكلاء وقاعدة بيانات ونشر، مبنية على Base44. زرار الكود بينزل نسخة zip من الواجهة للمراجعة.'} },
     { id:'p14', cat:'ai',   status:'done', thumb:'assets/portrait-sq.jpg', live:'https://mido9980.github.io/easy-chat/', source:'https://github.com/Mido9980/easy-chat', tools:['LLM API','Backend'],
       title:{en:'EASY AI Chat', ar:'EASY AI شات'},
       desc:{en:'ChatGPT-style assistant page with safety guardrails and an Egyptian-Arabic persona. Live.', ar:'صفحة مساعد على نمط ChatGPT بضوابط أمان وشخصية بالعامية المصرية. شغالة.'} }
