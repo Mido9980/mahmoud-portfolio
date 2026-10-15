@@ -37,7 +37,7 @@ h3{font-size:1.1rem;margin-bottom:6px}
 .tag{display:inline-block;border:1px solid var(--line);background:var(--glass);border-radius:99px;padding:5px 14px;font-size:.8rem;color:var(--cy)}
 .tag::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;margin-inline-end:8px;box-shadow:0 0 8px #22c55e}
 
-.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;padding:28px 0}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding:24px 0}
 @media(max-width:820px){.hero{grid-template-columns:1fr}.hero .frame{order:-1;max-width:min(420px,86%);margin:0 auto;width:100%}}
 .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:14px;font-weight:700;border:1px solid transparent;cursor:pointer;font-size:.98rem;transition:transform .15s,box-shadow .2s;color:#fff;font-family:inherit}
@@ -48,10 +48,10 @@ h3{font-size:1.1rem;margin-bottom:6px}
 .btn.wa{background:#16a34a}
 
 .frame{perspective:900px}
-.frame .in{position:relative;border-radius:26px;padding:6px;background:linear-gradient(135deg,var(--cy),var(--vi),var(--pu));box-shadow:0 0 50px rgba(139,92,246,.45);transform:rotateY(-8deg) rotateX(3deg);transition:transform .3s;animation:float 6s ease-in-out infinite}
+.frame .in{position:relative;border-radius:22px;padding:6px;background:linear-gradient(135deg,var(--cy),var(--vi),var(--pu));box-shadow:0 0 50px rgba(139,92,246,.45);transform:rotateY(-8deg) rotateX(3deg);transition:transform .3s;animation:float 6s ease-in-out infinite}
 [dir=rtl] .frame .in{transform:rotateY(8deg) rotateX(3deg)}
 .frame:hover .in{transform:rotateY(0) rotateX(0)}
-.frame img{border-radius:21px;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.frame img{border-radius:16px;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:50% 42%}
 @keyframes float{50%{translate:0 -8px}}
 
 .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
@@ -155,7 +155,7 @@ footer .soc{display:flex;gap:10px;justify-content:center;margin:12px 0;flex-wrap
  h2{font-size:clamp(1.6rem,2.2vw,2.4rem)}
  .frame .in{padding:8px;border-radius:32px}
  .frame img{border-radius:26px;max-height:78vh;object-fit:cover}
- .hero .frame{max-width:520px}
+ .hero .frame{max-width:430px}
  .lyric{min-height:300px}
  .mbox{max-width:760px}
  .mbox video{max-height:72vh}
