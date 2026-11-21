@@ -1,0 +1,14 @@
+{
+  "name": "NOVA AI VIDEO AGENT ULTRA",
+  "short_name": "NOVA",
+  "description": "Autonomous AI creative director for cinematic video production.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#05050a",
+  "theme_color": "#05050a",
+  "orientation": "any",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

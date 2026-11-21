@@ -1,0 +1,6 @@
+node_modules/
+nova/node_modules/
+nova/data/
+*.log
+.env
+.DS_Store
