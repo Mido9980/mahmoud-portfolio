@@ -1,14 +1,7 @@
 import { Router } from 'express';
 import { q } from '../db.js';
-import {
-  loginUser,
-  registerUser,
-  destroySession,
-  requireAuth,
-  publicUser,
-  hashPassword,
-  verifyPassword,
-} from '../auth.js';
+import { loginUser, registerUser, destroySession, requireAuth, publicUser } from '../auth.js';
+import { hashPassword, verifyPassword } from '../crypto.js';
 import { HttpError, asyncHandler, str } from '../http.js';
 import { providerStates } from '../providers/keys.js';
 import { resolveCredentials } from '../providers/keys.js';
