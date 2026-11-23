@@ -1,0 +1,30 @@
+# Base44 sandbox runbook. The site is plain HTML/CSS/JS with no build step,
+# so it is served straight from the cloned source by a tiny static server.
+services:
+  web:
+    image: python:3.12-slim
+    working_dir: /srv/site
+    command:
+      - python
+      - -m
+      - http.server
+      - -b
+      - 0.0.0.0
+      - -d
+      - /srv/site
+      - "3000"
+    volumes:
+      - ./:/srv/site:ro
+    ports:
+      - "3000:3000"
+    restart: on-failure
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:3000/index.html', timeout=3).status == 200 else 1)"
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
